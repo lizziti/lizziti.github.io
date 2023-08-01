@@ -1,1 +1,35 @@
-<p>results-summary-component-challenge works!</p>
+<div style="width: 600px; height: 400px; background-color: white; box-shadow: 10px 5px 10px hsl(221, 100%, 96%); border-radius: 30px;
+            display: grid; grid-template-columns: 50% auto">
+  <div style="background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); width: 100%; height: 100%; border-radius: 30px;
+              display: grid; grid-template-rows: 10% 50% 15% auto">
+    <div style="text-align: center; color: hsl(0, 0%, 100%)">
+      <p style="font-size: 18px; font-weight: 800; font-family: HankenGrotesk-Bold;">Your Result</p>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;
+                  width: 150px; height: 150px; border-radius: 50%; background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0))">
+        <p style="font-family: HankenGrotesk-ExtraBold; font-size: 50px; color: hsl(0, 0%, 100%); margin: 40px 0 0 0;">76</p>
+        <p style="text-align: center; color: hsl(0, 0%, 100%); font-family: HankenGrotesk-Medium; margin: 0 0 30px 0;">of 100</p>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; color: hsl(0, 0%, 100%)"><p style="font-family: HankenGrotesk-Bold; font-size: 30px; margin: 0;">Great</p></div>
+    <div style="text-align: center; color: hsl(0, 0%, 100%)"><p style="padding: 0 14%; font-family: HankenGrotesk-Medium;">You scored higher than 65% of people who have taken these tests.</p></div>
+  </div>
+
+
+  <div style="display: grid; grid-template-rows: 10% 70% auto; width: 100%; height: 100%;">
+    <div>
+      <p style="font-size: 18px; font-weight: 800; font-family: HankenGrotesk-Bold; color: hsl(224, 30%, 27%); padding-left: 10%;">Summary</p>
+    </div>
+    <div>
+      <div *ngFor="let datum of data, let i = index">
+        <img [src]="datum.icon">
+        {{datum.category}} {{datum.score}}
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-content: center; width: 100%; height: 100%;">
+      <button style="font-family: HankenGrotesk-Medium; font-size: 15px; color: hsl(0, 0%, 100%); width: 80%; height: 60%; background-color: hsl(224, 30%, 27%); border-radius: 30px;">
+        Continue</button>
+    </div>
+  </div>
+</div>

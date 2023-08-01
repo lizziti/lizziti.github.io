@@ -8,6 +8,10 @@ import { ResultsSummaryComponentChallengeComponent } from './frontend-mentor/res
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+import {MatListModule} from "@angular/material/list";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import {MatButtonModule} from "@angular/material/button";
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

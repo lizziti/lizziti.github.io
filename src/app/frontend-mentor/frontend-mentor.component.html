@@ -1,5 +1,12 @@
-<nav>
-  <a routerLink="./ResultsSummaryComponentChallenge">Results Summary Component Challenge</a>
-</nav>
 
-<router-outlet></router-outlet>
+<div style="display: grid; grid-template-columns: 25% auto">
+  <nav>
+    <ul style="list-style-type: none;">
+      <li><a routerLink="./ResultsSummaryComponentChallenge">Results Summary Component Challenge</a></li>
+    </ul>
+  </nav>
+
+  <article style="width: 100%; height: 100%; margin: 10px;">
+    <router-outlet></router-outlet>
+  </article>
+</div>
